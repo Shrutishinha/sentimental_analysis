@@ -1,18 +1,30 @@
-# 🧠 Sentimental Analysis
+# 😊 Sentiment Analysis using Machine Learning
 
-A Machine Learning-based Sentiment Analysis application that predicts whether a given text expresses **Positive**, **Negative**, or **Neutral** sentiment. The project includes data preprocessing, model training, prediction, and an interactive web interface.
+A Machine Learning-based Sentiment Analysis application that classifies text into **Positive**, **Negative**, or **Neutral** sentiments. The project includes data preprocessing, model training, prediction, and a simple web interface for real-time sentiment analysis.
 
 ---
 
 ## 📌 Features
 
-- 🔍 Analyze sentiment from user input
-- 😊 Predict Positive, Negative, or Neutral sentiment
-- 🧹 Text preprocessing and cleaning
-- 🤖 Machine Learning model for classification
-- 🌐 Interactive web application
-- 📊 Model evaluation and performance metrics
-- 💾 Pre-trained model support
+- 🔍 Text Sentiment Classification
+- 🧹 Data Cleaning & Preprocessing
+- 🤖 Machine Learning Model Training
+- 📊 Model Evaluation
+- 🌐 User-friendly Web Interface
+- 💾 Saved Trained Models
+- 📈 Real-time Sentiment Prediction
+
+---
+
+## 🛠️ Tech Stack
+
+- **Python**
+- **Scikit-learn**
+- **Pandas**
+- **NumPy**
+- **NLTK**
+- **Flask / Streamlit** *(depending on your app.py)*
+- **Joblib**
 
 ---
 
@@ -20,48 +32,59 @@ A Machine Learning-based Sentiment Analysis application that predicts whether a 
 
 ```
 sentimental_analysis/
-│── assets/
-│── data/
-│── models/
-│── notebooks/
+│
+├── assets/                  # Images and static files
+├── data/                    # Dataset
+├── models/                  # Trained ML models
+├── notebooks/
 │   └── sentiment_analysis.ipynb
-│── pages/
-│── utils/
-│── app.py
-│── main.py
-│── requirements.txt
-│── .gitignore
+├── pages/                   # Web pages
+├── utils/                   # Utility functions
+│
+├── app.py                   # Main web application
+├── main.py                  # Model execution
+├── requirements.txt         # Dependencies
+├── .gitignore
+└── README.md
 ```
-
----
-
-## 🛠️ Technologies Used
-
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- NLTK
-- Streamlit
-- Joblib
 
 ---
 
 ## 🚀 Installation
 
-Clone the repository
+### Clone the repository
 
 ```bash
 git clone https://github.com/Shrutisinha/sentimental_analysis.git
 ```
 
-Navigate to the project
+### Navigate to the project
 
 ```bash
 cd sentimental_analysis
 ```
 
-Install dependencies
+### Create Virtual Environment (Optional)
+
+```bash
+python -m venv venv
+```
+
+### Activate Virtual Environment
+
+**Windows**
+
+```bash
+venv\Scripts\activate
+```
+
+**Linux/Mac**
+
+```bash
+source venv/bin/activate
+```
+
+### Install Dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -69,12 +92,10 @@ pip install -r requirements.txt
 
 ---
 
-## ▶️ Run the Application
-
-For Streamlit
+## ▶️ Run the Project
 
 ```bash
-streamlit run app.py
+python app.py
 ```
 
 or
@@ -85,21 +106,34 @@ python main.py
 
 ---
 
-## 📊 Machine Learning Workflow
+## 📊 Workflow
 
-1. Data Collection
-2. Data Cleaning
-3. Text Preprocessing
-4. Feature Extraction (TF-IDF)
-5. Model Training
-6. Model Evaluation
-7. Sentiment Prediction
+1. Load Dataset
+2. Text Cleaning
+3. Tokenization
+4. Remove Stopwords
+5. Feature Extraction (TF-IDF)
+6. Train Machine Learning Model
+7. Save Model
+8. Predict Sentiment
+9. Display Results
 
 ---
 
-## 📸 Screenshots
+## 📈 Model Performance
 
-Add screenshots inside the **assets/** folder.
+| Metric | Score |
+|---------|-------|
+| Accuracy | *Add your accuracy here* |
+| Precision | *Add here* |
+| Recall | *Add here* |
+| F1-Score | *Add here* |
+
+---
+
+## 📷 Screenshots
+
+Add screenshots of your application inside the **assets/** folder.
 
 Example:
 
@@ -107,10 +141,10 @@ Example:
 assets/
 ├── home.png
 ├── prediction.png
-├── accuracy.png
+└── result.png
 ```
 
-Then display them like:
+Then display them:
 
 ```markdown
 ## Home Page
@@ -124,23 +158,26 @@ Then display them like:
 
 ---
 
-## 📦 Requirements
-
-Install all required libraries using
-
-```bash
-pip install -r requirements.txt
-```
-
----
-
 ## 🎯 Future Improvements
 
 - Deep Learning (LSTM/BERT)
-- Multi-language sentiment analysis
-- Real-time Twitter sentiment analysis
+- Multi-language Sentiment Analysis
 - Emotion Detection
-- Model deployment on Cloud
+- Speech-to-Text Sentiment Analysis
+- Docker Deployment
+- Cloud Deployment
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repository
+2. Create a new branch
+3. Commit your changes
+4. Push the branch
+5. Open a Pull Request
 
 ---
 
@@ -148,12 +185,10 @@ pip install -r requirements.txt
 
 **Shruti Sinha**
 
-B.Tech Computer Science Engineering
-
-GitHub: https://github.com/Shrutisinha
+- GitHub: https://github.com/Shrutisinha
 
 ---
 
-## ⭐ Support
+## ⭐ Show Your Support
 
-If you found this project useful, consider giving it a ⭐ on GitHub.
+If you found this project useful, please consider giving it a ⭐ on GitHub!
