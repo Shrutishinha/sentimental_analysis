@@ -1,4 +1,5 @@
-# 😊 Sentiment Analysis using Machine Learning
+# 😊 Sentiment Analysis using Machine Learning# <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35"> Hey, I'm Shruti Sinha!
+### 🚀 AI Developer • 📈 Data Analyst • 🌐 Full-Stack Developer
 
 A Machine Learning-based Sentiment Analysis application that classifies text into **Positive**, **Negative**, or **Neutral** sentiments. The project includes data preprocessing, model training, prediction, and a simple web interface for real-time sentiment analysis.
 
