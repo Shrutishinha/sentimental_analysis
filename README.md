@@ -1,5 +1,5 @@
 <div align="center">
-hi
+
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=280&color=0:0F172A,50:1E293B,100:0F172A&text=Sentiment%20Analysis&fontSize=52&fontColor=FFFFFF&animation=fadeIn&fontAlignY=38&desc=Machine%20Learning%20•%20Natural%20Language%20Processing%20•%20Python&descAlignY=60"/>
 
 <br>
