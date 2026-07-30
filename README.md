@@ -51,6 +51,70 @@ A[Raw Text]
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 </p>
 
+## 🛠️ Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/Shrutisinha/sentiment-analysis.git
+cd sentiment-analysis
+
+# Create a virtual environment
+python -m venv venv
+source venv/bin/activate      # On Windows: venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Download NLTK data (stopwords, tokenizers)
+python -m nltk.downloader stopwords punkt
+```
+
+<p align="center">
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+</p>
+
+## 🚀 Usage
+
+**Train the model**
+```bash
+python train.py
+```
+This runs the full pipeline — cleaning, tokenization, TF-IDF vectorization, and model training — then saves the trained model and vectorizer as `.pkl`/`.joblib` files.
+
+**Run the web app**
+```bash
+python app.py
+```
+Open `http://localhost:5000` (or the port shown in your terminal) and enter any text to get an instant sentiment prediction.
+
+**Use it in a script**
+```python
+from predict import predict_sentiment
+
+predict_sentiment("This product exceeded my expectations!")
+# Output: Positive 😊
+```
+
+<p align="center">
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+</p>
+
+## 📊 Results
+
+| Model | Accuracy | F1-Score |
+|-------|----------|----------|
+| Logistic Regression | ~88% | 0.87 |
+| Naive Bayes | ~85% | 0.84 |
+| Support Vector Machine | ~89% | 0.88 |
+| Random Forest | ~86% | 0.85 |
+| Gradient Boosting | ~87% | 0.86 |
+
+> Best performing model achieved **~89% accuracy** on the held-out test set.
+
+<p align="center">
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+</p>
+
 <div align="center">
 <img height="170" src="https://github-readme-stats.vercel.app/api?username=Shrutisinha&show_icons=true&hide_border=true&theme=transparent"/>
 <img height="170" src="https://github-readme-streak-stats.herokuapp.com/?user=Shrutisinha&theme=transparent&hide_border=true"/>
