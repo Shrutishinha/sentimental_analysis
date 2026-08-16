@@ -1,82 +1,118 @@
 <div align="center">
 
+<!-- Animated Header -->
+
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=280&color=0:020617,50:0F172A,100:1E293B&text=Sentiment%20Analysis&fontSize=52&fontColor=FFFFFF&animation=fadeIn&fontAlignY=38&desc=Machine%20Learning%20%E2%80%A2%20Natural%20Language%20Processing%20%E2%80%A2%20Python&descAlignY=60&descSize=18"/>
 
 <br>
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Inter&weight=600&size=25&duration=3500&pause=1000&color=334155&center=true&vCenter=true&width=850&lines=Turn+Text+into+Actionable+Insights;Real-Time+Sentiment+Classification;TF-IDF+%7C+Scikit-Learn+%7C+NLTK;Machine+Learning+for+Human+Language"/>
+<!-- Typing Animation -->
+
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=800&color=0F172A&center=true&vCenter=true&width=850&lines=Analyze+Human+Language+with+AI;Detect+Positive+%7C+Neutral+%7C+Negative+Sentiment;TF-IDF+%2B+Machine+Learning;Real-Time+Sentiment+Prediction;Built+with+Python+%26+NLP"/>
 
 <br><br>
 
-<img src="https://img.shields.io/badge/Python-3.12-0F172A?style=for-the-badge&logo=python&logoColor=white"/>
-<img src="https://img.shields.io/badge/Scikit--Learn-Machine%20Learning-0F172A?style=for-the-badge&logo=scikitlearn&logoColor=white"/>
-<img src="https://img.shields.io/badge/NLTK-NLP-0F172A?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/TF--IDF-Text%20Vectorization-0F172A?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Flask-Web%20Application-0F172A?style=for-the-badge&logo=flask&logoColor=white"/>
+<!-- Tech Stack -->
+
+<img src="https://skillicons.dev/icons?i=python,sklearn,flask,pandas,numpy,git,github&perline=7"/>
 
 <br><br>
 
-<a href="#-overview">Overview</a> • <a href="#-features">Features</a> • <a href="#-architecture">Architecture</a> • <a href="#-installation">Installation</a> • <a href="#-usage">Usage</a> • <a href="#-results">Results</a>
+<img src="https://img.shields.io/github/stars/Shrutisinha/sentiment-analysis?style=for-the-badge&logo=github&label=Stars"/>
+<img src="https://img.shields.io/github/forks/Shrutisinha/sentiment-analysis?style=for-the-badge&logo=github&label=Forks"/>
+<img src="https://img.shields.io/github/last-commit/Shrutisinha/sentiment-analysis?style=for-the-badge&logo=git&label=Updated"/>
 
 </div>
 
 ---
 
-<p align="center">
-<img src="https://user-images.githubusercontent.com/74038190/212750228-0d3d7d82-b0d2-4df1-a4d4-ff4c2e0c3d4f.gif" width="90%">
-</p>
-
-## 📌 Overview
-
-**Sentiment Analysis** is a Natural Language Processing project that uses Machine Learning to identify the emotional tone of textual data.
-
-The system processes raw text, applies a complete NLP preprocessing pipeline, converts language into numerical features using **TF-IDF**, and uses a trained Machine Learning model to classify the input into:
+<!-- Animated Illustration -->
 
 <p align="center">
+<img src="https://user-images.githubusercontent.com/74038190/212750228-0d3d7d82-b0d2-4df1-a4d4-ff4c2e0c3d4f.gif" width="80%"/>
+</p>
 
-😊 <b>Positive</b>    •   
-😐 <b>Neutral</b>    •   
-😔 <b>Negative</b>
+## 🧠 Sentiment Analysis
+
+> **Turning human language into actionable intelligence using Machine Learning and Natural Language Processing.**
+
+This project analyzes textual data and automatically classifies sentiment into:
+
+<p align="center">
+
+😊 **Positive**    •   
+😐 **Neutral**    •   
+😔 **Negative**
 
 </p>
 
-The project also provides a **web-based interface** for real-time sentiment prediction, making the trained model accessible beyond a notebook environment.
+The system combines **NLP preprocessing**, **TF-IDF feature extraction**, and **Machine Learning classification** to provide fast and reusable sentiment predictions.
 
 ---
 
-## ✨ Key Features
+## ✨ Features
 
 <table>
 <tr>
-<td width="50%">
+<td align="center" width="33%">
 
-### 🧠 Intelligent Classification
+### 🧹
 
-Uses Machine Learning algorithms to identify sentiment from textual input.
+**NLP Pipeline**
 
-### 🔤 NLP Preprocessing
-
-Cleans and prepares raw text through tokenization, normalization, and stopword removal.
-
-### 📊 TF-IDF Vectorization
-
-Transforms textual data into meaningful numerical features for model training.
+Text cleaning, tokenization and stopword removal.
 
 </td>
 
-<td width="50%">
+<td align="center" width="33%">
 
-### ⚡ Real-Time Prediction
+### 📊
 
-Analyze user-provided text instantly through the web application.
+**TF-IDF**
 
-### 💾 Model Persistence
+Converts textual information into numerical features.
 
-Trained models and vectorizers are stored using Joblib for reuse without retraining.
+</td>
 
-### 🌐 Web Application
+<td align="center" width="33%">
 
-Simple and intuitive interface for interacting with the trained sentiment classifier.
+### 🤖
+
+**ML Classification**
+
+Predicts Positive, Neutral or Negative sentiment.
+
+</td>
+</tr>
+
+<tr>
+<td align="center">
+
+### ⚡
+
+**Real-Time**
+
+Instant sentiment prediction.
+
+</td>
+
+<td align="center">
+
+### 💾
+
+**Model Persistence**
+
+Models stored using Joblib.
+
+</td>
+
+<td align="center">
+
+### 🌐
+
+**Web Application**
+
+Interactive Flask interface.
 
 </td>
 </tr>
@@ -84,55 +120,43 @@ Simple and intuitive interface for interacting with the trained sentiment classi
 
 ---
 
-## 🏗️ Architecture
+## 🔄 ML Pipeline
 
 ```mermaid
 flowchart LR
-    A["📝 Raw Text"] --> B["🧹 Text Cleaning"]
-    B --> C["🔤 Tokenization"]
-    C --> D["🚫 Stopword Removal"]
-    D --> E["📊 TF-IDF Vectorization"]
-    E --> F["🤖 ML Model"]
-    F --> G{"Sentiment"}
+    A["📝 Raw Text"]
+    B["🧹 Cleaning"]
+    C["🔤 Tokenization"]
+    D["🚫 Stopword Removal"]
+    E["📊 TF-IDF"]
+    F["🤖 ML Model"]
+    G{"🎯 Sentiment"}
+
+    A --> B --> C --> D --> E --> F --> G
+
     G --> H["😊 Positive"]
     G --> I["😐 Neutral"]
     G --> J["😔 Negative"]
-```
-
-### 🔄 Processing Pipeline
-
-```text
-Raw Input
-    ↓
-Text Normalization
-    ↓
-Cleaning & Preprocessing
-    ↓
-Tokenization
-    ↓
-Stopword Removal
-    ↓
-TF-IDF Feature Extraction
-    ↓
-Machine Learning Classification
-    ↓
-Sentiment Prediction
 ```
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Category               | Technologies               |
-| ---------------------- | -------------------------- |
-| **Language**           | Python                     |
-| **Machine Learning**   | Scikit-learn               |
-| **NLP**                | NLTK                       |
-| **Feature Extraction** | TF-IDF                     |
-| **Model Persistence**  | Joblib                     |
-| **Web Framework**      | Flask                      |
-| **Data Processing**    | Pandas, NumPy              |
-| **Development**        | VS Code / Jupyter Notebook |
+<p align="center">
+
+<img src="https://skillicons.dev/icons?i=python,flask,git,github"/>
+
+</p>
+
+<p align="center">
+
+<img src="https://img.shields.io/badge/Scikit--Learn-Machine%20Learning-0F172A?style=flat-square&logo=scikitlearn"/>
+<img src="https://img.shields.io/badge/NLTK-NLP-0F172A?style=flat-square"/>
+<img src="https://img.shields.io/badge/TF--IDF-Feature%20Extraction-0F172A?style=flat-square"/>
+<img src="https://img.shields.io/badge/Joblib-Model%20Persistence-0F172A?style=flat-square"/>
+
+</p>
 
 ---
 
@@ -156,27 +180,24 @@ sentiment-analysis/
 │
 ├── 📦 model.pkl
 ├── 📦 vectorizer.pkl
-│
 ├── 📊 dataset.csv
-├── 📓 sentiment_analysis.ipynb
 │
+├── 📓 sentiment_analysis.ipynb
 └── 📖 README.md
 ```
-
-> **Note:** Update the structure above if your repository uses different filenames or folders.
 
 ---
 
 ## ⚙️ Installation
 
-### 1️⃣ Clone the Repository
+### 1. Clone Repository
 
 ```bash
 git clone https://github.com/Shrutisinha/sentiment-analysis.git
 cd sentiment-analysis
 ```
 
-### 2️⃣ Create a Virtual Environment
+### 2. Create Virtual Environment
 
 **Windows**
 
@@ -192,13 +213,13 @@ python3 -m venv venv
 source venv/bin/activate
 ```
 
-### 3️⃣ Install Dependencies
+### 3. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4️⃣ Download Required NLTK Resources
+### 4. Download NLTK Resources
 
 ```bash
 python -m nltk.downloader stopwords punkt
@@ -206,35 +227,15 @@ python -m nltk.downloader stopwords punkt
 
 ---
 
-## 🚀 Usage
+## 🚀 Run the Project
 
-### Train the Model
+### Train Model
 
 ```bash
 python train.py
 ```
 
-The training pipeline performs:
-
-```text
-Dataset Loading
-      ↓
-Text Preprocessing
-      ↓
-TF-IDF Feature Extraction
-      ↓
-Model Training
-      ↓
-Model Evaluation
-      ↓
-Model + Vectorizer Saving
-```
-
-The trained model and vectorizer are saved for future predictions.
-
----
-
-### 🌐 Run the Web Application
+### Start Web Application
 
 ```bash
 python app.py
@@ -246,17 +247,9 @@ Then open:
 http://localhost:5000
 ```
 
-Enter a sentence such as:
-
-```text
-"This product exceeded my expectations!"
-```
-
-The application returns the predicted sentiment in real time.
-
 ---
 
-### 🐍 Use the Model Programmatically
+## 💻 Example
 
 ```python
 from predict import predict_sentiment
@@ -268,7 +261,7 @@ result = predict_sentiment(
 print(result)
 ```
 
-Example:
+**Output:**
 
 ```text
 Positive 😊
@@ -286,72 +279,68 @@ Positive 😊
 | Random Forest          |   ~86%   |   0.85   |
 | Gradient Boosting      |   ~87%   |   0.86   |
 
-### 🏆 Best Model
+### 🏆 Best Performance
 
-The **Support Vector Machine (SVM)** achieved the strongest performance among the evaluated models, with approximately:
-
-**89% Accuracy** • **0.88 F1-Score**
-
-> Performance may vary depending on the dataset, preprocessing strategy, train/test split, and model configuration.
+**Support Vector Machine — ~89% Accuracy**
 
 ---
 
-## 🧪 Example Predictions
+## 🔮 Future Enhancements
 
-| Input                                   | Prediction  |
-| --------------------------------------- | ----------- |
-| `"I absolutely loved this experience!"` | 😊 Positive |
-| `"The service was okay."`               | 😐 Neutral  |
-| `"This was a terrible experience."`     | 😔 Negative |
-
----
-
-## 💡 What This Project Demonstrates
-
-* Natural Language Processing fundamentals
-* Text preprocessing and normalization
-* TF-IDF feature engineering
-* Supervised Machine Learning
-* Model comparison and evaluation
-* Classification metrics
-* Model serialization with Joblib
-* Flask-based Machine Learning deployment
-* Python project structuring
-* End-to-end ML workflow
+* [ ] 🎯 Add prediction confidence scores
+* [ ] 😊 Add emotion detection
+* [ ] 📈 Add sentiment analytics dashboard
+* [ ] 🧠 Experiment with Deep Learning models
+* [ ] 🌐 Deploy the application online
+* [ ] 🔌 Add REST API
+* [ ] 📊 Add interactive visualizations
+* [ ] 🗣️ Improve sarcasm detection
+* [ ] 🔄 Automated model retraining
 
 ---
 
-## 🔮 Future Improvements
-
-* [ ] Add larger and more diverse datasets
-* [ ] Implement deep-learning-based sentiment models
-* [ ] Add emotion classification beyond positive/neutral/negative
-* [ ] Add confidence scores to predictions
-* [ ] Add sentiment visualization and analytics
-* [ ] Deploy the application to a cloud platform
-* [ ] Add REST API support
-* [ ] Improve handling of sarcasm and contextual language
-* [ ] Add automated model retraining
-
----
-
-## 📈 Future Vision
-
-The project can be extended into a broader **Customer Feedback Intelligence Platform** capable of analyzing large volumes of reviews, comments, and feedback.
-
-Potential applications include:
+## 📈 Project Workflow
 
 ```text
-Customer Reviews
-       ↓
-Sentiment Detection
-       ↓
-Emotion & Topic Analysis
-       ↓
-Trend Identification
-       ↓
-Business Insights
+          📝 USER TEXT
+               │
+               ▼
+        🧹 PREPROCESSING
+               │
+               ▼
+        📊 TF-IDF FEATURES
+               │
+               ▼
+          🤖 ML MODEL
+               │
+               ▼
+       🎯 SENTIMENT RESULT
+          /      |      \
+         /       |       \
+        ▼        ▼        ▼
+      😊        😐        😔
+   Positive   Neutral   Negative
 ```
+
+---
+
+## 📊 GitHub Activity
+
+<div align="center">
+
+<img height="180" src="https://github-readme-stats.vercel.app/api?username=Shrutisinha&show_icons=true&hide_border=true&theme=transparent&rank_icon=github"/>
+
+<img height="180" src="https://streak-stats.demolab.com?user=Shrutisinha&hide_border=true&theme=transparent"/>
+
+</div>
+
+<br>
+
+<!-- Contribution Animation -->
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake.svg" width="90%"/>
+</p>
 
 ---
 
@@ -359,37 +348,26 @@ Business Insights
 
 <div align="center">
 
-### Shruti Sinha
+### **Shruti Sinha**
 
 **B.Tech CSE | Machine Learning | Data Analytics | NLP**
-
-Building practical solutions with
-**Python • Machine Learning • Data Analytics • NLP**
 
 <br>
 
 <a href="https://github.com/Shrutisinha">
-<img src="https://img.shields.io/badge/GitHub-Shrutisinha-0F172A?style=for-the-badge&logo=github&logoColor=white"/>
+<img src="https://img.shields.io/badge/GitHub-Shrutisinha-0F172A?style=for-the-badge&logo=github"/>
 </a>
 
 </div>
 
 ---
 
-## ⭐ Support
-
-If you found this project useful or interesting, consider giving the repository a ⭐ on GitHub.
-
-<p align="center">
-
-**Machine Learning • NLP • Text Intelligence**
-
-</p>
-
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&section=footer&height=140&color=0:1E293B,100:020617"/>
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=18&duration=3500&pause=1000&color=0F172A&center=true&vCenter=true&width=700&lines=Turning+Text+into+Intelligence+%F0%9F%A4%96;One+Sentence+at+a+Time+%F0%9F%92%AC;Powered+by+Machine+Learning+%F0%9F%A7%A0"/>
 
-### *"Turning text into intelligence with Machine Learning."*
+<br><br>
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&section=footer&height=150&color=0:1E293B,50:0F172A,100:020617&animation=fadeIn"/>
 
 </div>
